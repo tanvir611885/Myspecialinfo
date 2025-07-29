@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Unique Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <!-- Decorative background elements -->
+    <div class="fixed inset-0 overflow-hidden -z-10">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-blue-100 opacity-20 blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-purple-100 opacity-20 blur-3xl"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 py-10 max-w-6xl">
+        <!-- Header with 3D Floating Avatar -->
+        <header class="flex flex-col items-center justify-center py-16">
+            <div class="relative floating-element mb-8">
+                <div class="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full opacity-20 blur-xl"></div>
+                <img src="Tanvir1.png" alt="Professional headshot of [Your Name] with a modern casual style, smiling confidently against a blurred urban background" class="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-white object-cover shadow-xl" />
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Md. Tanvir Anjum</h1>
+            <div class="text-xl md:text-2xl gradient-text font-medium mb-4">[Mechanical Engineer(Undergraduate)]</div>
+            <p class="max-w-xl text-center text-gray-600 leading-relaxed">
+                Started My Journey Of Life Plentyful And Blessing,Always Respect Our Parents And Other Elder Person! ALLAH Is The Best Planner !
+            </p>
+        </header>
+
+        <!-- About Section with Animated Cards -->
+        <section class="py-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">About Me</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md">
+                    <div class="text-blue-600 mb-4 text-4xl">🧑🏻‍💼</div>
+                    <h3 class="text-xl font-bold mb-3">Background</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        I'm a passionate [Mechanical Engineering] with [Running 2025] years of experience creating impactful digital solutions. My journey has Started me through various industries, helping me develop a unique perspective.
+                    </p>
+                </div>
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md">
+                    <div class="text-purple-600 mb-4 text-4xl">👨🏻‍🎓</div>
+                    <h3 class="text-xl font-bold mb-3">Education</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        I Am  Studing At Mawlana Bhashini Science And Techonology University Deparment Of Mechanical Engineering Since August 2025.And My College Kurigram Govt. College[2023-2024]And My School Is UPSC [2022]
+                    </p>
+                </div>
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md">
+                    <div class="text-indigo-600 mb-4 text-4xl">🤝❤️🤝</div>
+                    <h3 class="text-xl font-bold mb-3">Interest And Hobby</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        About Different Types Of Mechenery, you can find me [Any Resourt In Bangladesh] And My Hobby One Day Me And My Wife Exploring  Many Country [Special Tour In Tangual Haor]
+                        And MyAnother Hobby Complete Hazz In My Younger AGE InsaAllah Allah  Accept My Deserve As Soon As Possible !   
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills with Interactive Visualization -->
+        <section class="py-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Skills & Expertise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="skill-card bg-white p-6 rounded-xl shadow-sm text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-50 flex items-center justify-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/183092d6-f74a-4f1a-8e1c-6408f1b2cb06.png" alt="Web development icon with code brackets and browser window" class="w-10 h-10" />
+                    </div>
+                    <h3 class="font-bold mb-1">Web Dev</h3>
+                    <div class="h-1 w-full bg-gray-200 rounded-full overflow-hidden mt-2">
+                        <div class="h-full bg-blue-500 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-sm text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-50 flex items-center justify-center">
+                        <img src="photography.png" alt="UI/UX design icon with paint brush and color palette" class="w-10 h-10" />
+                    </div>
+                    <h3 class="font-bold mb-1">Photography</h3>
+                    <div class="h-1 w-full bg-gray-200 rounded-full overflow-hidden mt-2">
+                        <div class="h-full bg-purple-500 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-sm text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-green-50 flex items-center justify-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/72257cab-2bae-4ae4-8f4d-417dc15f7705.png" alt="Mobile development icon with smartphone and app interface" class="w-10 h-10" />
+                    </div>
+                    <h3 class="font-bold mb-1">Mobile</h3>
+                    <div class="h-1 w-full bg-gray-200 rounded-full overflow-hidden mt-2">
+                        <div class="h-full bg-green-500 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-xl shadow-sm text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-red-50 flex items-center justify-center">
+                        <img src="mechenery.png" alt="Data visualization icon with charts and graphs" class="w-10 h-10" />
+                    </div>
+                    <h3 class="font-bold mb-1">Mechenery Material</h3>
+                    <div class="h-1 w-full bg-gray-200 rounded-full overflow-hidden mt-2">
+                        <div class="h-full bg-red-500 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="py-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card card-hover bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="Machanic.png" alt="Project One: Modern e-commerce dashboard interface with analytics charts and product listings" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">About Mechenery Material</h3>
+                        <p class="text-gray-600 mb-4">My Course Complete In 4 Years And Me Research In Another Topic Of Mechenery</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Chart.js</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card card-hover bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="web.png" alt="Project Two: Health and fitness mobile app showing workout tracking and statistics" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Software And Web Development Programe</h3>
+                        <p class="text-gray-600 mb-4">Translating designs into functional websites using programming languages like HTML, CSS, and JavaScript, while also managing backend operations for data handling.
+                            It Is Increse day By Day And Now it Reach High Goal.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Flutter</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card card-hover bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/62971bec-8197-4ca8-8eb7-84fbec0bf0fc.png" alt="Project Three: Interactive data visualization platform with 3D geographical mapping" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Data Visualization</h3>
+                        <p class="text-gray-600 mb-4">Interactive data exploration and visualization platform with 3D maps</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">D3.js</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Three.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with Interactive Form -->
+        <section class="py-16">
+            <div class="bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <div class="px-8 py-12 md:px-12 md:py-16 text-white">
+                        <h2 class="text-3xl font-bold mb-4">Let's Work Together</h2>
+                        <p class="text-blue-100 mb-8 max-w-md leading-relaxed">
+                            Have a project in mind or want to discuss opportunities? I'm currently available for freelance work and full-time positions.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-10 p-3 rounded-lg mr-4">
+                                    <img src="gmail.png" alt="Email icon with envelope symbol" class="w-6 h-6" />
+                                </div>
+                                <div>
+                                    <h3 class="font-medium">Email</h3>
+                                    <p class="text-blue-100 opacity-90">tanvir2466ahamed@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-10 p-3 rounded-lg mr-4">
+                                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b356d67a-c1d5-4ca4-bf75-88cec55df920.png" alt="Social media icon with network connections" class="w-6 h-6" />
+                                </div>
+                                <div>
+                                    <h3 class="font-medium">Social</h3>
+                                    <div class="flex space-x-4 mt-1">
+                                        <a href="#" class="text-blue-100 hover:text-white transition">LinkedIn</a>
+                                        <a href="#" class="text-blue-100 hover:text-white transition">Twitter</a>
+                                        <a href="#" class="text-blue-100 hover:text-white transition">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 md:p-12">
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="your.email@example.com">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 shadow-md hover:shadow-lg">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 border-t border-gray-200 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-500 hover:text-blue-600 transition">
+                    <img src="https://placehold.co/40x40" alt="LinkedIn logo icon" class="w-6 h-6" />
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 transition">
+                    <img src="https://placehold.co/40x40" alt="GitHub logo icon" class="w-6 h-6" />
+                </a>
+                <a href="#" class="text-gray-500 hover:text-blue-400 transition">
+                    <img src="https://placehold.co/40x40" alt="Twitter logo icon" class="w-6 h-6" />
+                </a>
+                <a href="#" class="text-gray-500 hover:text-red-600 transition">
+                    <img src="https://placehold.co/40x40" alt="Dribbble logo icon" class="w-6 h-6" />
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm">
+                © <span id="year"></span> [Your Name]. All rights reserved.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Animate skill bars on scroll
+        const animateBars = () => {
+            const skillCards = document.querySelectorAll('.skill-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const bar = entry.target.querySelector('div > div');
+                        const width = bar.style.width;
+                        bar.style.width = '0';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 300);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            skillCards.forEach(card => {
+                observer.observe(card);
+            });
+        };
+        
+        // Initialize animations when DOM is loaded
+        document.addEventListener('DOMContentLoaded', animateBars);
+    </script>
+</body>
+</html>
+
